@@ -1,0 +1,6 @@
+;; shadow-cljs configuration
+{:deps {:aliases [:dev]}
+ :dev-http {7777 "public"}
+ :builds {:demo {:target :browser
+                 :compiler-options {:output-feature-set :es8}
+                 :modules {:main {:init-fn cm.demo/init}}}}}
